@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
 	name='HumanRandom',
-	version='1.0b',
+	version='1.1b',
 	description='Pseudo-randomize things in a way that feels human',
 	author='katacarbix',
 	author_email='me@katacarbix.xyz',
