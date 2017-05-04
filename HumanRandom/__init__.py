@@ -23,7 +23,7 @@ def shuffle(thelist, amt=1): # shuffle(items to shuffle[, randomness factor])
 		i = 0
 		while i < len(thelist):
 			if (SequenceMatcher(None, str(thelist[i]), str(thelist[i-1])).ratio() * amt) > 0.5:
-				thelist.insert(-1, thelist.pop(i))
+				random.shuffle(thelist[i:])
 			i += 1
 	return thelist
 
