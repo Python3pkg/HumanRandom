@@ -13,7 +13,7 @@ _int_minmax = (0,0)
 def shuffle(thelist, amt=1): # shuffle(items to shuffle[, randomness factor])
 	if type(thelist) is not list:
 		raise HumanRandomError("Input is not a list, cannot shuffle.")
-	if type(amt) is not int and type(amt) is not float and type(amt) is not long and type(amt) is not complex:
+	if type(amt) is not int and type(amt) is not float and type(amt) is not int and type(amt) is not complex:
 		raise HumanRandomError("Human-ness factor is not a valid number type.")
 	if len(thelist) <= 1:
 		return thelist
@@ -33,7 +33,7 @@ def randint(min, max, amt=1): # randint(minimum value, maximum value[, randomnes
 
 	if type(min) is not int or type(max) is not int:
 		raise HumanRandomError("Min or max is not an integer.")
-	if type(amt) is not int and type(amt) is not float and type(amt) is not long and type(amt) is not complex:
+	if type(amt) is not int and type(amt) is not float and type(amt) is not int and type(amt) is not complex:
 		raise HumanRandomError("Human-ness factor is not a valid number type.")
 
 	if min != _int_minmax[0] or max != _int_minmax[1]:
